@@ -1178,7 +1178,7 @@ describe('supports http with nodejs', function () {
           port: parsed.port,
           path: parsed.path,
           protocol: parsed.protocol,
-          rejectUnauthorized: false
+          rejectUnauthorized: true
         };
 
         http.get(opts, function (res) {
